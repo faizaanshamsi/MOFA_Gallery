@@ -18,8 +18,8 @@ describe CollectionArtwork do
 
   describe 'Association Tests' do
 
-    it { should belong_to(:collections) }
-    it { should belong_to(:artworks) }
+    it { should belong_to(:collection) }
+    it { should belong_to(:artwork) }
 
   end
 
