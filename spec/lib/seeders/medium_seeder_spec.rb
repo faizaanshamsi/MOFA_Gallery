@@ -9,7 +9,6 @@ describe Seeders::MediumSeeder do
     seeder.seed
     expect(Medium.where(name: one_medium[:name])).to be_present
 
-
   end
 
   it 'should not create duplicates' do
