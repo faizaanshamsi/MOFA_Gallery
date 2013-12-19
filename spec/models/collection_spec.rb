@@ -17,8 +17,8 @@ describe Collection do
 
   describe 'Association Tests' do
 
-    it { should belong_to(:collection_artwork) }
-    it { should belong_to(:favorite_collection) }
+    it { should have_many(:collection_artworks) }
+    it { should have_many(:favorite_collections) }
 
     it { should have_many(:artworks).through(:collection_artworks) }
     it { should have_many(:customers).through(:favorite_collections) }
