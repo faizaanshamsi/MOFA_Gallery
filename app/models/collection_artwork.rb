@@ -7,6 +7,6 @@ class CollectionArtwork < ActiveRecord::Base
     inverse_of: :collection_artworks
 
   belongs_to :artwork,
-    inverse_of: :favorite_collections
+    inverse_of: :collection_artworks
 
 end

@@ -27,5 +27,4 @@ describe Customer do
     it { should have_many(:collections).through(:favorite_collections) }
 
   end
-
 end

@@ -36,15 +36,4 @@ describe Artwork do
     it { should have_many(:collections).through(:collection_artworks) }
 
   end
-
 end
-
-
-    # it "should allow nil for customer id" do
-    #   artwork_with_nil_custid = Artwork.new(title: "hello", artist_id: 1,
-    #     created_date: Time.now, listed_date: Time.now, asking_price: 300,
-    #     medium_id: 1, customer_id: nil)
-
-    #   expect(artwork_with_nil_custid).to be_valid
-    #   expect(artwork_with_nil_custid)
-    # end

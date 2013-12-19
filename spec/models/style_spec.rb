@@ -21,5 +21,4 @@ describe Style do
     it { should have_many(:artworks).through(:artists) }
 
   end
-
 end

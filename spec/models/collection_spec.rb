@@ -24,5 +24,4 @@ describe Collection do
     it { should have_many(:customers).through(:favorite_collections) }
 
   end
-
 end

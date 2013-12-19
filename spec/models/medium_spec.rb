@@ -20,5 +20,4 @@ describe Medium do
     it { should have_many(:artworks).dependent(:destroy) }
 
   end
-
 end
