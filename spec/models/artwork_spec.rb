@@ -47,18 +47,8 @@ describe Artwork do
 
   it { should belong_to(:medium) }
 
-  it { should belong_to(:style).through(:artist) }
-
   it { should have_many(:collection_artworks).dependent(:destroy) }
 
   end
 
 end
-
- # it { should have_valid(:email).when('test@test.com', 'test+spam@gmail.com') }
- #  it { should_not have_valid(:email).when('fail', 123) }
- #  it { should have_valid(:name).when('TestName') }
- #  it { should_not have_valid(:name).when('Test') }
-
-# should have_db_column(:camera_aperture).
-#       of_type(:decimal)
