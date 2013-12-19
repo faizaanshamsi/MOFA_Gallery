@@ -18,6 +18,9 @@ class Artwork < ActiveRecord::Base
   has_many :collection_artworks,
     dependent: :destroy
 
+  has_many :collections,
+    through: :collection_artworks
+
 end
 
  # validates_presence_of :title

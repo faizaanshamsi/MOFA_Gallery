@@ -33,6 +33,7 @@ describe Artwork do
     it { should belong_to(:customer) }
     it { should belong_to(:medium) }
     it { should have_many(:collection_artworks).dependent(:destroy) }
+    it { should have_many(:collections).through(:collection_artworks) }
 
   end
 
