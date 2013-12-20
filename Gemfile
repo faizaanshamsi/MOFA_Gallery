@@ -40,10 +40,14 @@ group :test, :development do
   gem 'valid_attribute'
   gem 'factory_girl_rails'
   gem 'launchy'
-  gem 'football_formatter'
   gem 'dotenv'
+  gem 'meta_request'
+  gem 'binding_of_caller'
+  gem 'better_errors'
 
 end
+
+gem 'foundation-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
