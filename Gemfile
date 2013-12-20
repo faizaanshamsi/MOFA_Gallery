@@ -40,7 +40,7 @@ group :test, :development do
   gem 'valid_attribute'
   gem 'factory_girl_rails'
   gem 'launchy'
-  gem 'dotenv'
+  gem 'dotenv-rails'
   gem 'meta_request'
   gem 'binding_of_caller'
   gem 'better_errors'

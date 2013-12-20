@@ -1,6 +1,13 @@
 MOFAGallery::Application.routes.draw do
-  resources :artists, only: [:index, :show]
+  resources :artists
+  resources :artworks
+  resources :collections
+  resources :customers
+  resources :styles
+  resources :mediums
+
   root 'artists#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

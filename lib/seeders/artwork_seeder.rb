@@ -22,10 +22,10 @@ module Seeders
           {title: 'Kevin and the Orange', artist_id: 1,
             created_date: Time.now, listed_date: Time.now, asking_price: 1 ,
             medium_id: 3, purchase_date: Time.now, customer_id: 2, selling_price: 1000 },
-          {title: 'Kevin and the Orange', artist_id: 2,
+          {title: 'The Revenge of the Faizaan', artist_id: 2,
             created_date: Time.now, listed_date: Time.now, asking_price: 200,
             medium_id: 2},
-          {title: 'Kevin and the Orange', artist_id: 3,
+          {title: 'Portrait of a Launch Academy Student', artist_id: 3,
             created_date: Time.now , listed_date: Time.now, asking_price: 10000000,
             medium_id: 1}
         ]

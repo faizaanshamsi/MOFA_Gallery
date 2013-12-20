@@ -1,0 +1,14 @@
+<div class='row'>
+  <h1><%= @artwork.title %><br></h1>
+  <h3>Artist: <%= @artwork.artist.name %><br></h3>
+  <h3>Medium: <%= @artwork.medium.name %><br></h3>
+  <h3>Date Created: <%= @artwork.created_date %><br></h3>
+  <h3>Listing Date: <%= @artwork.listed_date %><br></h3>
+  <h3>Asking Price: $<%= @artwork.asking_price %>0<br></h3>
+  <!-- Only show if not nil -->
+  <% unless @artwork.purchase_date.nil? %>
+    <h3>Purchase Date: <%= @artwork.purchase_date %><br></h3>
+    <h3>Customer: <%= @artwork.customer.name %><br></h3>
+    <h3>Selling Price: $<%= @artwork.selling_price %>0<br></h3>
+  <% end %>
+</div>

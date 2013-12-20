@@ -1,0 +1,6 @@
+<div class='row'>
+  <h1><%= @collection.name %><br></h1>
+  <% @collection_art.each do |art| %>
+    <h3>Name: <%= link_to art.title, art %></h3>
+  <% end %>
+</div>
