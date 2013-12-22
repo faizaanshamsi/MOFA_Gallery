@@ -1,3 +1,15 @@
 <div class='row'>
   <h1><%= @customer.name %><br></h1>
+  <h2><%= @customer.contact_info %><br></h2>
+  <h2>Amount Spent: <%= @customer.amount_spent %></h2><br>
+  <h2>Favorite Collections:</h2><br>
+  <% @customer.collections.each do |collection| %>
+    <h3><%= link_to collection.name, collection %></h3>
+  <% end %>
+  <% if @customer.artworks.count > 0 %>
+    <h2>Purchases:</h2><br>
+    <% @customer.artworks.each do |artwork| %>
+      <h3><%= link_to artwork.title, artwork %></h3>
+    <% end %>
+  <% end %>
 </div>

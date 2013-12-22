@@ -27,4 +27,17 @@ describe Customer do
     it { should have_many(:collections).through(:favorite_collections) }
 
   end
+
+  describe 'Total Amount Spent' do
+
+    customer = FactoryGirl.create(:customer)
+    artwork1 = FactoryGirl.create(:artwork, purchase_date: Time.now, customer_id: customer.id, selling_price: 500)
+    artwork2 = FactoryGirl.create(:artwork, purchase_date: Time.now, customer_id: customer.id, selling_price: 600)
+    artwork3 = FactoryGirl.create(:artwork, purchase_date: Time.now, customer_id: customer.id, selling_price: 700)
+
+    it "should return a customer's total amount spent" do
+      expect(customer.amount_spent).to eql(1800.0)
+    end
+
+  end
 end

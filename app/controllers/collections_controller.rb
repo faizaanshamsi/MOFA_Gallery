@@ -9,4 +9,19 @@ class CollectionsController < ApplicationController
     @collection_art = @collection.artworks.all
   end
 
+  def new
+    @collection = Collection.new
+  end
+
+
+  def create
+    @collection = Collection.new(params)
+
+    if @collection.save
+      format.html { redirect_to @collection, notice: 'Whatever was successfully created.' }
+    else
+      format.html { render action: 'new' }
+    end
+  end
+
 end

@@ -12,4 +12,8 @@ class Customer < ActiveRecord::Base
   has_many :collections,
     through: :favorite_collections
 
+  def amount_spent
+    artworks.inject(0) { |sum, artwork| sum + artwork.selling_price }
+  end
+
 end
